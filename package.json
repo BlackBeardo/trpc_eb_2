@@ -1,0 +1,16 @@
+{
+  "name": "trpc_eb_1",
+  "private": "true",
+  "scripts": {
+    "start": "concurrently \"wsrun --parallel start\"",
+    "serve": "concurrently \"wsrun --parallel serve\""
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "wsrun": "^5.2.4"
+  }
+}
